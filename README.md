@@ -24,19 +24,6 @@ data.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -120,19 +107,6 @@ data.tail()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -217,19 +191,6 @@ data.describe()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -310,19 +271,6 @@ data.sort_values(by='score', ascending=False)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -477,19 +425,6 @@ data2
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -544,7 +479,7 @@ data['title']
     tt0137523                  Fight Club (1999)
     tt0133093                  The Matrix (1999)
     tt1375666                   Inception (2010)
-                              ...               
+                              ...
     tt0807721                     Meduzot (2007)
     tt0339642              Daltry Calhoun (2005)
     tt0060880      The Quiller Memorandum (1966)
@@ -563,19 +498,6 @@ data[['title','year']]
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -715,7 +637,7 @@ data['score'].value_counts()
     7.2    386
     6.7    384
     7.0    382
-          ... 
+          ...
     1.5      7
     1.6      6
     8.9      5
@@ -789,9 +711,9 @@ data.plot()
 
 
 
-    
+
 ![png](output_27_1.png)
-    
+
 
 
 
@@ -807,9 +729,9 @@ data.plot(kind='scatter', x='score', y='votes')
 
 
 
-    
+
 ![png](output_28_1.png)
-    
+
 
 
 
@@ -825,9 +747,9 @@ data.plot(kind='scatter', x='score', y='votes', alpha=0.3)
 
 
 
-    
+
 ![png](output_29_1.png)
-    
+
 
 
 
@@ -843,9 +765,9 @@ data['score'].plot(kind='hist')
 
 
 
-    
+
 ![png](output_30_1.png)
-    
+
 
 
 
@@ -866,9 +788,9 @@ sns.lmplot(x='score', y='votes', data=data)
 
 
 
-    
+
 ![png](output_32_1.png)
-    
+
 
 
 
@@ -885,9 +807,9 @@ sns.pairplot(data, hue='score', height=2.5)
 
 
 
-    
+
 ![png](output_33_1.png)
-    
+
 
 
 ## Ordinary least squares regression (OLS)
@@ -914,19 +836,19 @@ results.summary()
 <table class="simpletable">
 <caption>OLS Regression Results</caption>
 <tr>
-  <th>Dep. Variable:</th>          <td>score</td>      <th>  R-squared (uncentered):</th>      <td>   0.221</td> 
+  <th>Dep. Variable:</th>          <td>score</td>      <th>  R-squared (uncentered):</th>      <td>   0.221</td>
 </tr>
 <tr>
-  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.220</td> 
+  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.220</td>
 </tr>
 <tr>
-  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   2829.</td> 
+  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   2829.</td>
 </tr>
 <tr>
-  <th>Date:</th>             <td>Fri, 28 Oct 2022</td> <th>  Prob (F-statistic):</th>           <td>  0.00</td>  
+  <th>Date:</th>             <td>Fri, 28 Oct 2022</td> <th>  Prob (F-statistic):</th>           <td>  0.00</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>12:48:14</td>     <th>  Log-Likelihood:    </th>          <td> -31655.</td> 
+  <th>Time:</th>                 <td>12:48:14</td>     <th>  Log-Likelihood:    </th>          <td> -31655.</td>
 </tr>
 <tr>
   <th>No. Observations:</th>      <td> 10000</td>      <th>  AIC:               </th>          <td>6.331e+04</td>
@@ -935,15 +857,15 @@ results.summary()
   <th>Df Residuals:</th>          <td>  9999</td>      <th>  BIC:               </th>          <td>6.332e+04</td>
 </tr>
 <tr>
-  <th>Df Model:</th>              <td>     1</td>      <th>                     </th>              <td> </td>    
+  <th>Df Model:</th>              <td>     1</td>      <th>                     </th>              <td> </td>
 </tr>
 <tr>
-  <th>Covariance Type:</th>      <td>nonrobust</td>    <th>                     </th>              <td> </td>    
+  <th>Covariance Type:</th>      <td>nonrobust</td>    <th>                     </th>              <td> </td>
 </tr>
 </table>
 <table class="simpletable">
 <tr>
-    <td></td>       <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
+    <td></td>       <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>
 </tr>
 <tr>
   <th>votes</th> <td> 7.956e-05</td> <td>  1.5e-06</td> <td>   53.190</td> <td> 0.000</td> <td> 7.66e-05</td> <td> 8.25e-05</td>
@@ -951,16 +873,16 @@ results.summary()
 </table>
 <table class="simpletable">
 <tr>
-  <th>Omnibus:</th>       <td>9919.237</td> <th>  Durbin-Watson:     </th>  <td>   0.082</td> 
+  <th>Omnibus:</th>       <td>9919.237</td> <th>  Durbin-Watson:     </th>  <td>   0.082</td>
 </tr>
 <tr>
   <th>Prob(Omnibus):</th>  <td> 0.000</td>  <th>  Jarque-Bera (JB):  </th> <td>762189.305</td>
 </tr>
 <tr>
-  <th>Skew:</th>           <td>-4.757</td>  <th>  Prob(JB):          </th>  <td>    0.00</td> 
+  <th>Skew:</th>           <td>-4.757</td>  <th>  Prob(JB):          </th>  <td>    0.00</td>
 </tr>
 <tr>
-  <th>Kurtosis:</th>       <td>44.698</td>  <th>  Cond. No.          </th>  <td>    1.00</td> 
+  <th>Kurtosis:</th>       <td>44.698</td>  <th>  Cond. No.          </th>  <td>    1.00</td>
 </tr>
 </table><br/><br/>Notes:<br/>[1] R² is computed without centering (uncentered) since the model does not contain a constant.<br/>[2] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 
@@ -977,19 +899,6 @@ data[data['year'] > 1995]
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1127,19 +1036,6 @@ data[(data['year'] > 1995) & (data['year'] < 1997)].sort_values('score', ascendi
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1288,12 +1184,12 @@ sns.lmplot(x='year', y='score', data=yearlyData)
 
 
 
-    
+
 ![png](output_43_1.png)
-    
 
 
-## Challenge Questions: 
+
+## Challenge Questions:
 - What was the highest scoring movie in 1996?
 - `data[data['year'] == 1996].sort_values(by='rating', ascending=False).head()`
 
@@ -1317,19 +1213,6 @@ data[(data['year'] == 1996)].sort_values('score', ascending=False).head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1412,19 +1295,6 @@ data.sort_values('score', ascending=False).head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1507,19 +1377,6 @@ data.sort_values('votes', ascending=False).head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1602,19 +1459,6 @@ data[(data['year'] >= 1960) & (data['year'] <= 1970)].sort_values('score', ascen
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1692,7 +1536,7 @@ data[(data['year'] >= 1960) & (data['year'] <= 1970)].sort_values('score', ascen
 
 
 ```python
-data['formatted title'] = data['title'].str[:-7] 
+data['formatted title'] = data['title'].str[:-7]
 ```
 
 
@@ -1709,19 +1553,6 @@ data
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1889,9 +1720,9 @@ sns.pairplot(data, hue='length', height=2.5)
 
 
 
-    
+
 ![png](output_53_1.png)
-    
+
 
 
 
